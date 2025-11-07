@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ENG / AHMED SAMEH — Web Designer & Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <!-- Simple English version reusing same structure -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-line"></div>
+      <div class="loader-text">Loading System…</div>
+    </div>
+  </div>
+  <canvas id="matrix"></canvas>
+
+  <nav id="navbar">
+    <div class="nav-left">
+      <div id="logo" class="glitch">ENG / AHMED SAMEH</div>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="lang-toggle" onclick="changeLang('ar')">AR</button>
+      <button class="mode-toggle" id="modeToggle">⛶</button>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-left">
+      <h1 class="big-title">System Breached<br><span class="accent">by ENG / AHMED SAMEH</span></h1>
+      <p class="sub">Web Designer & Developer — Web + UI/UX + Brand</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#portfolio">See Work</a>
+        <a class="btn whatsapp" href="https://wa.me/201557481699" target="_blank">WhatsApp</a>
+      </div>
+      <div class="terminal" id="terminal">
+        <div class="term-lines" id="termLinesEn"></div>
+      </div>
+      <div class="socials">
+        <a target="_blank" href="https://www.facebook.com/ahmd.samh.hsyn.2025/">Facebook</a>
+        <a target="_blank" href="https://www.instagram.com/e.n.g.ahmed.sameh/">Instagram</a>
+        <a target="_blank" href="https://www.linkedin.com/in/eng-ahmed-sameh-47b14737b/">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div id="holoWrap"><canvas id="holoEn"></canvas></div>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <h2>About</h2>
+    <p>A front-end developer building modern interactive websites — creativity + code.</p>
+  </section>
+
+  <section id="portfolio" class="section portfolio">
+    <h2>Portfolio</h2>
+   <div class="grid">
+  <div class="card">
+    <img src="image.png" alt="">
+    <h3>Future Soft</h3>
+    <a href="https://future.xo.je/?i=1" class="btn">عرض المشروع</a>
+  </div>
+
+  <div class="card">
+    <img src="image copy.png" alt="">
+    <h3>XBX Website</h3>
+    <a href="https://xbx.xo.je/?i=1" class="btn">عرض المشروع</a>
+  </div>
+
+  <div class="card">
+    <img src="image copy 2.png" alt="">
+    <h3>XPX PLUS Website</h3>
+    <a href="https://xbxx.xo.je/?i=2" class="btn">عرض المشروع</a>
+  </div>
+</div>
+
+  </section>
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+
+  <form class="contact-form" onsubmit="sendWhatsApp(event)">
+    <input id="w_name" type="text" placeholder="Full Name" required>
+    <textarea id="w_msg" rows="4" placeholder="Type your message..." required></textarea>
+    <button type="submit" class="btn whatsapp">Send via WhatsApp</button>
+  </form>
+</section>
+
+  <footer><p>© 2025 ENG / AHMED SAMEH</p></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.156.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

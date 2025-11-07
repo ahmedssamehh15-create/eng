@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ENG / AHMED SAMEH — Web Designer & Developer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-line"></div>
+      <div class="loader-text">Loading System…</div>
+    </div>
+  </div>
+
+  <!-- Matrix rain -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-left">
+      <div id="logo" class="glitch">ENG / AHMED SAMEH</div>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#about">من أنا</a></li>
+        <li><a href="#portfolio">الأعمال</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+      <button class="lang-toggle" onclick="changeLang('en')">EN</button>
+      <button class="mode-toggle" id="modeToggle">⛶</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-left">
+      <h1 class="big-title">System Breached<br><span class="accent">by ENG / AHMED SAMEH</span></h1>
+      <p class="sub">Web Designer & Developer — Web + UI/UX + Brand</p>
+
+      <div class="hero-ctas">
+        <a class="btn" href="#portfolio">شاهد أعمالي</a>
+        <a class="btn whatsapp" href="https://wa.me/201557481699" target="_blank">تواصل واتساب</a>
+      </div>
+
+      <div class="terminal" id="terminal">
+        <div class="term-lines" id="termLines"></div>
+      </div>
+
+      <div class="socials">
+        <a target="_blank" href="https://www.facebook.com/ahmd.samh.hsyn.2025/">Facebook</a>
+        <a target="_blank" href="https://www.instagram.com/e.n.g.ahmed.sameh/">Instagram</a>
+        <a target="_blank" href="https://www.linkedin.com/in/eng-ahmed-sameh-47b14737b/">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- 3D canvas -->
+      <div id="holoWrap">
+        <canvas id="holo"></canvas>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section about">
+   <p>
+أنا ENG / AHMED SAMEH، مصمم ومطور مواقع محترف متخصص في بناء تجارب مستخدم قوية ومبتكرة
+لأصحاب الأعمال والشركات الناشئة. أعمل على تحويل الأفكار من مجرد تصميم إلى مشروع ناجح
+جاهز للعرض على السوق، بجودة عالية وتفاصيل دقيقة تليق بالبراند الخاص بك.
+</p>
+
+<p>
+أمتلك خبرة في واجهات المستخدم UI والتجربة UX وأطبق فيها أحدث المعايير العالمية،
+من حيث السرعة، سهولة الاستخدام، وضمان تفاعل المستخدم بشكل ذكي مع الموقع.
+أسعى دائمًا إلى الدمج بين **الإبداع** و **التقنية** لإبهار الزائر وتحويله لعميل.
+</p>
+
+<p>
+نفذت العديد من المشاريع الاحترافية مثل صفحات هبوط Landing Pages، مواقع شركات كاملة
+Business Websites، أنظمة تحكم Dashboards، وبورتفوليو متعدد المجالات.  
+وأعمل باستخدام أحدث لغات وتقنيات الويب: HTML، CSS، JavaScript، React، Next.js،
+بالإضافة إلى أدوات التصميم الاحترافية مثل Figma و Adobe XD.
+</p>
+
+<p>
+هدفي هو إن مشروعك يبان بأفضل صورة أمام عملائك، ويحقق لك انتشار ومبيعات أعلى.
+أنا جاهز للعمل على فكرتك أياً كانت، ومستعد أطلعلك نتيجة ترضيك 100%.
+</p>
+
+    <div class="skills">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>UI/UX</span>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section portfolio">
+    <div class="services">
+  <div class="service-item">
+    <h3>تصميم وتطوير مواقع ويب</h3>
+    <p>
+      تصميم موقع عصري وسريع يتوافق مع كل الشاشات، مع أنيميشن جذاب،
+      تحسين كامل لسرعة التصفح، وتوافق مع محركات البحث SEO.
+    </p>
+  </div>
+
+  <div class="service-item">
+    <h3>تصميم هوية بصرية وشعارات</h3>
+    <p>
+      بصمم لك شعار احترافي وهوية كاملة متناسقة تعبر عن نشاطك
+      وتظل عالقة في ذهن العميل، مع تقديم أكثر من نموذج ومراجعات مجانية.
+    </p>
+  </div>
+
+  <div class="service-item">
+    <h3>تصميم واجهات وتجربة مستخدم UI/UX</h3>
+    <p>
+      تحليل كامل لفكرة المشروع، رسم خرائط تفاعل المستخدم،
+      وتنفيذ تصميم واجهة بنظام ألوان وأيقونات وTypography مميز يخدم الهدف.
+    </p>
+  </div>
+
+  <div class="service-item">
+    <h3>تطوير صفحات هبوط Landing Pages</h3>
+    <p>
+      صفحات لبيع خدمة أو منتج معين، مُحسّنة للتحويل وزيادة
+      العملاء المحتملين بنظام قوي لعرض المعلومات واقناع الزائر.
+    </p>
+  </div>
+</div>
+
+    <div class="grid">
+  <div class="card">
+    <img src="image.png" alt="">
+    <h3>Future Soft</h3>
+    <a href="https://future.xo.je/?i=1" class="btn">عرض المشروع</a>
+  </div>
+
+  <div class="card">
+    <img src="image copy.png" alt="">
+    <h3>XBX Website</h3>
+    <a href="https://xbx.xo.je/?i=1" class="btn">عرض المشروع</a>
+  </div>
+
+  <div class="card">
+    <img src="image copy 2.png" alt="">
+    <h3>XPX PLUS Website</h3>
+    <a href="https://xbxx.xo.je/?i=2" class="btn">عرض المشروع</a>
+  </div>
+</div>
+
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+  <h2>تواصل معي</h2>
+
+  <form class="contact-form" onsubmit="sendWhatsApp(event)">
+    <input id="w_name" type="text" placeholder="الاسم الكامل" required>
+    <textarea id="w_msg" rows="4" placeholder="اكتب رسالتك..." required></textarea>
+    <button type="submit" class="btn whatsapp">إرسال واتساب</button>
+  </form>
+</section>
+
+
+   
+
+  <footer>
+    <p>© 2025 ENG / AHMED SAMEH — All Rights Reserved</p>
+  </footer>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.156.0/build/three.min.js"></script>
+
+  <!-- scripts -->
+  <script src="script.js"></script>
+  <a href="https://wa.me/201557481699" class="float-whatsapp" target="_blank">💬</a>
+  <!-- Don’t Copy Protection -->
+  <script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('selectstart', e => e.preventDefault());
+    document.addEventListener('copy', e => {
+      e.preventDefault();
+      alert("🚫 Copy Disabled - Designed by ENG/AHMED SAMEH");
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+        e.preventDefault(); alert("🚫 View Source Disabled -ENG/AHMED SAMEH");
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === 'i' || e.key === 'I')) {
+        e.preventDefault(); alert("🚫 Inspect Disabled - ENG/AHMED SAMEH");
+      }
+      if (e.key === 'F12') {
+        e.preventDefault(); alert("🚫 Developer Tools Disabled - ENG/AHMED SAMEH");
+      }
+    });
+  </script>
+  
+
+</body>
+</html>
